@@ -1,0 +1,34 @@
+{
+  "name": "telegram-bot-api",
+  "version": "1.0.0",
+  "description": "텔레그램 봇 api를 구현한  샘플 프로젝트 입니다.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "텔레그램",
+    "telegrambot",
+    "텔레그램봇"
+  ],
+  "author": "wisdomstar94@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-utils": "^1.2.21",
+    "dayjs": "^1.11.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "geoip-lite": "^1.4.5",
+    "http-errors": "^2.0.0",
+    "node-telegram-bot-api": "^0.57.0",
+    "request-ip": "^2.2.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.7.2",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
