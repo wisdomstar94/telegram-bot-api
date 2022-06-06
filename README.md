@@ -37,7 +37,12 @@ cd telegram-bot-api
 ```
 npm i
 ```
-4. Copy the .env.sample file to .env.
+4. Copy the files like this:
+```
+cp .env.sample .env
+cp src/customs/telegramButtonCallback.sample.js src/customs/telegramButtonCallback.js
+cp src/customs/telegramButtonList.sample.js src/customs/telegramButtonList.js
+```
 5. Write the COOKIE_SECRET_KEY, TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID values ​​in the .env file.<br /><img width="70%" src="readme_images/telegram-bot-api-env-example.png" />
 6. Install pm2 globally.
 ```
@@ -55,3 +60,9 @@ http://localhost:2410/telegram/bot/message/send
 ```
 <img width="100%" src="readme_images/telegram-bot-api-postman.png" /><br />
 <img width="80%" src="readme_images/telegram-bot-message-sent.png" />
+
+9. If you want to send a button when sending a message, you can send isButtonShow value to true when calling http://localhost:2410/telegram/bot/message/send api. <br /><img src="readme_images/telegram-message-send-button-show-postman.png" /><br />
+<img src="readme_images/telegram-bot-button-example.png" />
+
+10. You can edit the "src/customs/telegramButtonList.js" file for button designation options and "src/customs/telegramButtonCallback.js" file for button callback options.<br /><br />
+<img src="readme_images/telegram-button-list-file.png" /><br /><br /><img src="readme_images/telegram-button-callback-file.png" />

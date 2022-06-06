@@ -1,4 +1,5 @@
 require('dotenv').config();
+require('./src/librarys/onHandleTelegramBot');
 
 const path = require('path');
 const cookieParser = require('cookie-parser');
